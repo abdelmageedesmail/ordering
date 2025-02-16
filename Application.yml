@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orders
+    username: abdelmageed
+    password: newpassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  # Flyway properties (if you're using Flyway for migrations)
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/orders
+    user: abdelmageed
+    password: newpassword
+    logging:
+      level:
+        org.flywaydb: DEBUG
